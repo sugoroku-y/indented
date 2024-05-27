@@ -1,6 +1,6 @@
 {
   "name": "@sugoroku-y/indented",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "TODO: indentedの説明を書く",
   "license": "MIT",
   "main": "./lib/index.js",
