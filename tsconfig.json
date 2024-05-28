@@ -3,7 +3,7 @@
     "target": "ES2018",
     "module": "commonjs",
     "lib": ["ESNext"],
-    "outDir": "../lib",
+    "outDir": "./lib",
     "declaration": true,
     "sourceMap": true,
     "esModuleInterop": true,
@@ -29,5 +29,6 @@
 
     "skipLibCheck": true
   },
+  "include": ["./src/"],
   "exclude": []
 }
