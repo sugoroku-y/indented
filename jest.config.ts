@@ -20,7 +20,7 @@ export default {
           // eslintでのチェック
           {
             displayName: 'eslint',
-            runner: 'jest-runner-eslint',
+            runner: 'eslint',
             testMatch: ['**/*.ts', '**/*.cjs'],
           },
           // prettierで整形して差異がないかチェック
