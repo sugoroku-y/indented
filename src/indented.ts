@@ -67,19 +67,16 @@ const templateCache = new TemplateCache();
 
 /**
  * インデント付きのテンプレートリテラルからインデントを除去した文字列を生成します。
- * @param _ タグ付きテンプレートリテラルに指定されたテンプレート
- * @param _.raw エスケープシーケンスを解除する前のテンプレート
- * @param values タグ付きテンプレートリテラルに指定されたパラメーター
+ * @param args タグ付きテンプレートリテラルに指定されたテンプレートとパラメーター
  * @returns 生成した文字列を返します。
  *
  * 不正なエスケープシーケンスは`\`を除去するだけでエラーや例外にはなりません。
  * ※ただしconsole.errorで出力します
  */
 export function indented(
-  { raw }: TemplateStringsArray,
-  ...values: unknown[]
+  ...args: [TemplateStringsArray, ...unknown[]]
 ): string {
   return templateCache
-    .get(raw)
-    .reduce((r, e, i) => `${r}${String(values[i - 1])}${e}`);
+    .get(args[0].raw)
+    .reduce((r, e, i) => `${r}${args[i]}${e}`);
 }
