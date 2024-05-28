@@ -1,7 +1,7 @@
 {
   "name": "@sugoroku-y/indented",
   "version": "0.0.1",
-  "description": "TODO: indentedの説明を書く",
+  "description": "Tagged templates that can be written indented.",
   "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
