@@ -1,12 +1,14 @@
-/lib/*.map
+/lib/**/*.map
 /src/
 /coverage/
 /.vscode/
 *.tgz
+*.zip
 /tests/
 /.eslint*
 /.prettier*
 /jest.*
 /jest-*
+tsconfig*.json
 /tools/
-tsconfig.json
+/.github/

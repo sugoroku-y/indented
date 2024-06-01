@@ -1,4 +1,7 @@
 {
-  "extends": "./tsconfig.json",
-  "include": ["./*.ts", "./tools/*.cjs"]
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "noEmit": true
+    },
+    "include": ["./*.ts", "./tools/*.cjs"]
 }

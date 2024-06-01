@@ -1,12 +1,19 @@
 {
-  "bracketSameLine": true,
-  "singleQuote": true,
-  "overrides": [
-    {
-      "files": ["*.json", ".eslintrc"],
-      "options": {
-        "trailingComma": "none"
-      }
-    }
-  ]
+    "singleQuote": true,
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": [".eslintrc", ".prettierrc", "*.jsonc"],
+            "options": {
+                "parser": "json",
+                "trailingComma": "none"
+            }
+        },
+        {
+            "files": ["*.md"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }
