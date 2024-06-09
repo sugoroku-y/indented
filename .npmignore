@@ -12,3 +12,4 @@
 tsconfig*.json
 /tools/
 /.github/
+.markdownlint-cli2.jsonc
