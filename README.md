@@ -1,7 +1,7 @@
 # @sugoroku-y/indented
 
 [![TypeScript](https://img.shields.io/badge/-TypeScript-404040.svg?logo=TypeScript)](https://www.typescriptlang.org/)
-[![GitHub Packages](https://img.shields.io/badge/-GitHub%20Packages-181717.svg?logo=github&style=flat)](https://github.com/sugoroku-y/indented/pkgs/npm/indented)
+[![GitHub Packages](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsugoroku-y%2Findented%2Fmain%2Fpackage.json&query=%24.version&prefix=v&logo=GitHub&label=GitHub%20Packages&link=https%3A%2F%2Fimg.shields.io%2Fbadge%2Flicense-MIT-blue.svg%3Fstyle%3Dflat)](https://github.com/sugoroku-y/indented/pkgs/npm/indented)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](./LICENSE)
 [![Coverage Status](https://coveralls.io/repos/github/sugoroku-y/indented/badge.svg)](https://coveralls.io/github/sugoroku-y/indented)
 [![Publish package to GitHub Packages](https://github.com/sugoroku-y/indented/actions/workflows/publish.yml/badge.svg)](https://github.com/sugoroku-y/indented/actions/workflows/publish.yml)
