@@ -1,6 +1,6 @@
 {
     "name": "@sugoroku-y/indented",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Tagged templates that can be written indented.",
     "license": "MIT",
     "main": "./lib/index.js",
