@@ -62,7 +62,7 @@ def\
         ${'u{00000110000}'} | ${`Parsing error: An extended Unicode escape value must be between 0x0 and 0x10FFFF inclusive.: '\\u{00000110000}'`}
         ${'a'}              | ${`Unnecessary escape character: '\\a'`}
         ${'#'}              | ${`Unnecessary escape character: '\\#'`}
-        ${'©'}             | ${`Unnecessary escape character: '\\©'`}
+        ${'©'}              | ${`Unnecessary escape character: '\\©'`}
         ${'あ'}             | ${`Unnecessary escape character: '\\あ'`}
         ${'🅰'}             | ${`Unnecessary escape character: '\\🅰'`}
         ${'鼏'}             | ${`Unnecessary escape character: '\\鼏'`}
