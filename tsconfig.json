@@ -3,6 +3,8 @@
         "target": "ESNext",
         "module": "commonjs",
         "lib": ["ESNext"],
+        "types": ["node", "jest"],
+        "rootDir": ".",
         "outDir": "./lib",
         "declaration": true,
         "sourceMap": true,
