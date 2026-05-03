@@ -29,10 +29,10 @@ describe('indented', () => {
     });
     test('indented with escape', () => {
         expect(indented`
-      abc\
+      abc:\
       ${true}
       def\
-      `).toBe('abctrue\ndef');
+      `).toBe('abc:true\ndef');
     });
     test.each`
         n
