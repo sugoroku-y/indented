@@ -112,6 +112,14 @@ const templateCache = new TemplateCache();
 export function indented(
     ...args: [TemplateStringsArray, ...unknown[]]
 ): string {
+    if (
+        args[0].length === 0 ||
+        args[0].raw.length !== args[0].length ||
+        args[0].length !== args.length
+    ) {
+        // 型制約では縛り切れない不正なテンプレートリテラルの呼び出しを検出する
+        throw new Error('Invalid template literal.');
+    }
     return templateCache
         .get(args[0].raw)
         .reduce((r, e, i) => `${r}${args[i]}${e}`);

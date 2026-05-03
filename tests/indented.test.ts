@@ -45,4 +45,29 @@ describe('indented', () => {
       def
       `).toBe(`abc\n${n}\ndef`);
     });
+    test('invalid template literal: empty template literal', () => {
+        expect(() => indented(Object.assign([], { raw: [] }))).toThrow(
+            'Invalid template literal.',
+        );
+    });
+    test('invalid template literal: mismatched lengths: raw too long', () => {
+        expect(() => indented(Object.assign([''], { raw: ['', ''] }))).toThrow(
+            'Invalid template literal.',
+        );
+    });
+    test('invalid template literal: mismatched lengths: raw too short', () => {
+        expect(() => indented(Object.assign([''], { raw: [] }))).toThrow(
+            'Invalid template literal.',
+        );
+    });
+    test('invalid template literal: mismatched lengths: values too long', () => {
+        expect(() => indented(Object.assign([''], { raw: [''] }), 1)).toThrow(
+            'Invalid template literal.',
+        );
+    });
+    test('invalid template literal: mismatched lengths: values too short', () => {
+        expect(() =>
+            indented(Object.assign(['', '', ''], { raw: ['', '', ''] }), 1),
+        ).toThrow('Invalid template literal.');
+    });
 });
