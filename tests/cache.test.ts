@@ -2,25 +2,20 @@ import { Cache } from '../src/Cache';
 
 describe('Cache', () => {
     test('creates and caches a value for a missing key', () => {
-        let createCount = 0;
-        const cache = new Cache((_key: object) => {
-            createCount += 1;
-            return {};
-        });
+        const newInstance = jest.fn(() => ({}));
+        const cache = new Cache(newInstance);
 
         const key = {};
         const firstValue = cache.get(key);
         const secondValue = cache.get(key);
 
         expect(firstValue).toBe(secondValue);
-        expect(createCount).toBe(1);
+        expect(newInstance).toHaveBeenCalledTimes(1);
         expect(cache.has(key)).toBe(true);
     });
 
     test('delete removes the cached value and returns booleans appropriately', () => {
-        const cache = new Cache((_key: object) => {
-            return {};
-        });
+        const cache = new Cache(() => ({}));
 
         const key = {};
 
